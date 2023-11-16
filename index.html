@@ -8,16 +8,22 @@
 </head>
 <body>
   <div class="container">
-    <h1>Información de Pokémon</h1>
-    <div class="pokemon-form">
-      <select id="pokemon-select">
-        <option value="bulbasaur">Bulbasaur</option>
-        <option value="charmander">Charmander</option>
-        <option value="squirtle">Squirtle</option>
-      </select>
-      <button id="get-pokemon">Obtener Información</button>
+    <div class="header">
+      <h1>Información de Pokémon</h1>
+      <div class="pokemon-form">
+        <select id="pokemon-select" class="select">
+          <option value="bulbasaur">Bulbasaur</option>
+          <option value="charmander">Charmander</option>
+          <option value="squirtle">Squirtle</option>
+          <option value="ditto">Ditto</option>
+          <option value="pikachu">Pikachu</option>
+          <option value="abra">Abra</option>
+        </select>
+        <button id="get-pokemon" class="boton">Obtener Información</button>
+        <button class="botonReset">Borrar</button>
+      </div>
     </div>
-    
+    <div class="pokemon"></div>
   </div>
   <script src="./js/script.js"></script>
 </body>

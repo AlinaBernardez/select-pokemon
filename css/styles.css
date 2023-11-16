@@ -1,1 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'VT323', monospace;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFDE00;
+    width: 100%;
+    padding: 1.5rem;
+    color: #CC0000;
+}
+
+.select {
+    border: none;
+    background-color: #CC0000;
+    color: white;
+    padding: 0.7rem;
+    font-family: 'VT323', monospace;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pokemon {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 30px;
+    gap: 15px;
+
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+    border-radius: 10px;
+    border: solid 4px #FFDE00;
+    background-color: #3B4CCA;
+    color: white;
+    padding: 2rem;
+}
+
+.pokemon-form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+
+}
+
+.pokemon-image {
+    max-width: 120px;
+    margin: 0 10px;
+    width: 250px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.pokemon-image:hover {
+    cursor: pointer;
+    transform: scale(1.5);
+    }
+
+.pokemon-stat {
+    font-weight: bold;
+}
+
+.boton, .botonReset {
+    font-size: 16px;
+    padding: 10px;
+    border: 2px solid #CC0000;
+    border-radius: 15px;
+    color:#CC0000;
+    cursor: pointer;
+    background-color: #FFDE00; 
+    position:relative;
+    display: block;
+    height: 50px;
+    width: 150px;
+    overflow: hidden;
+    transition: all 500ms ease;
+    text-align: center;
+    justify-content: center;
+    line-height: 16px;
+
+}
+.boton::before, .botonReset::before {
+    content:"";
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    background-color: #CC0000;
+    transition: all 500ms ease;
+    z-index: -1;
+    width: 0;
+    height: 100%;
+}
+
+.boton:hover, .botonReset:hover{
+    animation: shadow-pulse 1000ms;
+    background-color: #CC0000;
+    color: white
+}
+
+@keyframes shadow-pulse{
+    0% {
+    box-shadow:0 0 0 0 #CC0000;
+    }
+    100% {
+    box-shadow: 0 0 8px 16px #CC0000;
+    }
+}
 
